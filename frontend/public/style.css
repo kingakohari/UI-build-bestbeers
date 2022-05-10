@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    a img {
+    border: none;
+    }
+    
+    button,
+    a {
+    cursor: pointer;
+    color: inherit;
+    }
+    
+    textarea {
+    resize: none;
+    }
+    
+    button,
+    textarea,
+    select {
+    appearance: none !important;
+    border-radius: 0;
+    }
+    
+    /*End of CSS reset*/
+
+    body {
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #ffeedf;
+        color: #145434
+    }
+    
+    /* === HEADER === */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        padding: 10px;
+        border-bottom: 1px solid #145434;
+        background-color: #ffeedf;
+        z-index: 2;
+    }
+    
+    #title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    
+    header > span {
+        font-size: 36px !important;
+    }
+    
+    /* === CARDS === */
+    #root {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 130px 50px;
+    }
+    
+    .beercard {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 375px;
+        min-height: 280px;
+        background-color: #145434;
+        color: #ffeedf;
+    }
+    
+    .number {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        padding: 2px;
+        text-align: center;
+        border-radius: 20px;
+        border: 2px solid #145434;
+        font-size: 24px;
+        background-color: #ffeedf;
+        color: #145434;
+    }
+    
+    .name {
+        display: flex;
+        align-items: center;
+        height: 50%;
+        margin: 40px 30px 10px 30px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ffeedf;
+        font-size: 36px;
+    }
+    
+    .basic-info {
+        margin: 0px 30px 60px 30px;
+        font-size: 18px;
+    }
+    
+    .description {
+        font-weight: 700;
+    }
+    
+    .details-button {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        right: -10px;
+        bottom: -10px;
+        width: 200px;
+        height: 50px;
+        padding-left: 75px;
+        border: 2px solid #145434;
+        font-size: 14px;
+        background-color: #ffeedf;
+        color: #145434;
+    }
+    
+    .arrow {
+        font-size: 36px !important;
+    }
+    
+    .details-button:hover {
+        border: 2px solid #ffeedf;
+        background-color: #145434;
+        color: #ffeedf;
+    }
