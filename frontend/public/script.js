@@ -11,7 +11,7 @@ function loadEvent() {
       document.getElementById("root").insertAdjacentHTML('beforeend', `
         <header>
             <p id="title">Best Beers</p>
-            <span class="material-icons">menu</span>
+            <button class="material-icons">menu</button>
         </header>
       `)
 
